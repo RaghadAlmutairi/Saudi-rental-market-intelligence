@@ -29,11 +29,7 @@ Market intelligence project for the **AWS Agentic AI Business Professional** Nan
 ├── research/                                   # Quick Research report (PDF)
 ├── data/
 │   └── Saudi_Arabia_Real_Estate.csv            # Aqar rental listings, 2021
-├── analysis/
-│   ├── dedupe_check.py                         # Duplicate check + per-city stats
-│   └── dedupe_results.md                       # Output of the script
 ├── screenshots/                                # Evidence, Figures 1-10
-├── requirements.txt
 └── .gitignore
 ```
 
@@ -55,14 +51,8 @@ The raw CSV has **2,197 exact duplicate rows** out of 3,718, leaving **1,521 uni
 | Dammam | 123 | 60,000 | 60,000 | 12.2 | 21.8 |
 | Al-Khobar | 83 | 65,000 | 75,000 | 18.1 | 1.5 |
 
-The apparent "furnished niche" in Al-Khobar (1.5%) was a duplicate artifact and is withdrawn. Dammam and Al-Khobar rest on small samples. Reproduce with `python analysis/dedupe_check.py`. The agent outputs in `deliverables/` were generated from the raw data and carry a correction note at the top.
+The apparent "furnished niche" in Al-Khobar (1.5%) was a duplicate artifact and is withdrawn. Dammam and Al-Khobar rest on small samples. The agent outputs in `deliverables/` were generated from the raw data and carry a correction note at the top.
 
-## Limitations
-
-- 2021 asking rents from one platform: relative city rankings only, not current price levels.
-- Rents only: no purchase prices, so no yield or ROI.
-- No published residential vacancy data by city; no market-share data.
-- Several external figures are single-source or not like-for-like (see the Research Brief, sections 6-7).
 
 ## Author
 
